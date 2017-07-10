@@ -24,7 +24,7 @@ defmodule Elixzo do
     ExAws.S3.put_object(bucket, fname, File.read!("/tmp/#{fname}"))
     |> ExAws.request!
 
-    "https://s3-#{region}.amazonaws.com/#{bucket}/#{fname}"
+    :os.cmd('echo "https://s3-#{region}.amazonaws.com/#{bucket}/#{fname}" | pbcopy')
   end
 
 end

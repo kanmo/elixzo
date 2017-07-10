@@ -30,6 +30,8 @@ defmodule Elixzo.Mixfile do
       {:configparser_ex, "~> 0.2.1"},
       {:timex, "~> 3.0"},
       {:tzdata, "== 0.1.8", override: true},
+      {:ex_doc, "~> 0.11"},
+      {:earmark, ">= 0.0.0"}
     ]
   end
 
