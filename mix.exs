@@ -28,7 +28,8 @@ defmodule Elixzo.Mixfile do
       {:poison, "~> 2.0"},
       {:hackney, "~> 1.6"},
       {:configparser_ex, "~> 0.2.1"},
-      {:timex, "~> 3.0"}
+      {:timex, "~> 3.0"},
+      {:tzdata, "== 0.1.8", override: true},
     ]
   end
 
