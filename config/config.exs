@@ -36,4 +36,4 @@ config :ex_aws,
 
 
 config :elixzo,
-  bucket: "YourBucketNameComesHere"
+  bucket: System.get_env("ELIXZO_BUCKET")
