@@ -9,11 +9,11 @@ defmodule Elixzo do
 
   ## Examples
 
-      iex> Elixzo.main
+      iex> Elixzo.capture
       "https://s3-ap-northeast-1.amazonaws.com/bucket-name/file-name"
 
   """
-  def main(argv) do
+  def capture do
     {:ok, now} = Timex.format(Timex.now, "%Y%m%d-%H%M%S", :strftime)
     fname = "#{now}.png"
     bucket = Application.get_env(:elixzo, :bucket)

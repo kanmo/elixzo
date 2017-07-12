@@ -7,7 +7,7 @@ defmodule Elixzo.Mixfile do
 
   def project do
     [app: :elixzo,
-     escript: [main_module: Elixzo],
+     escript: [main_module: Elixzo.CLI],
      version: "0.0.1",
      elixir: "~> 1.4",
      name: "Elixzo",
