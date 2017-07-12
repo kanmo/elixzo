@@ -25,6 +25,8 @@ defmodule Elixzo do
     |> ExAws.request!
 
     :os.cmd('echo "https://s3-#{region}.amazonaws.com/#{bucket}/#{fname}" | pbcopy')
+
+    IO.puts "https://s3-#{region}.amazonaws.com/#{bucket}/#{fname}"
   end
 
 end

@@ -29,7 +29,7 @@ defmodule Elixzo.Mixfile do
       {:hackney, "~> 1.6"},
       {:configparser_ex, "~> 0.2.1"},
       {:timex, "~> 3.0"},
-      {:tzdata, "== 0.1.8", override: true},
+      {:tzdata, "== 0.1.8"},
       {:ex_doc, "~> 0.11"},
       {:earmark, ">= 0.0.0"}
     ]
