@@ -1,4 +1,4 @@
-# Elixzo
+# Elixzo [![hex.pm version](https://img.shields.io/hexpm/v/elixzo.svg)](https://hex.pm/packages/ehee) [![hex.pm](https://img.shields.io/hexpm/l/elixzo.svg)](https://github.com/kanmo/ehee/blob/master/LICENSE)
 
 Screencapture cli tool for mac os.
 After you will capture screen, it will upload image file to your s3 bucket.
