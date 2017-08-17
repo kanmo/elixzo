@@ -21,7 +21,7 @@ defmodule Elixzo do
 
     System.cmd("screencapture", ["-i", "/tmp/#{fname}"])
 
-    ExAws.S3.put_object(bucket, fname, File.read!("/tmp/#{fname}"))
+    ExAws.S3.put_object(bucket, fname, File.read!("/tmp/#{fname}"), [{:content_type, "image/png"}])
     |> ExAws.request!
 
     :os.cmd('echo "https://s3-#{region}.amazonaws.com/#{bucket}/#{fname}" | pbcopy')
